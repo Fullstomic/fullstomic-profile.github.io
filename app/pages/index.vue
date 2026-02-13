@@ -20,7 +20,7 @@
       <h1>Contents</h1>
     </div>
     <v-row>
-      <v-col cols="12" class="my-5">
+      <v-col cols="12" class="my-5 d-flex jusity-center items-center">
         <home-cotent-link
           link="/about/"
           content-title="About"
@@ -28,21 +28,21 @@
           icon="account"
         />
       </v-col>
-      <v-col cols="12" class="my-5">
+      <v-col cols="12" class="my-5 d-flex jusity-center items-center">
         <home-cotent-link
           content-title="News"
           content-description="私に関するお知らせはこちらから。"
           icon="newspaper-variant"
         />
       </v-col>
-      <v-col cols="12" class="my-5">
+      <v-col cols="12" class="my-5 d-flex jusity-center items-center">
         <home-cotent-link
           content-title="Portfolio"
           content-description="私の制作した作品はこちらから。"
           icon="folder-file"
         />
       </v-col>
-      <v-col cols="12" class="my-5">
+      <v-col cols="12" class="my-5 d-flex jusity-center items-center">
         <home-cotent-link
           content-title="Contact"
           content-description="ご連絡はこちらから。"

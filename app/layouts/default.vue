@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar elevation="0">
+    <v-app-bar elevation="0" sticky>
       <template #prepend>
         <a href="" class="home_page_link">Fullstomic </a>
       </template>
@@ -21,7 +21,7 @@
       </template>
     </v-app-bar>
     <search-form :isActive="isActive" @close="isActive = false"></search-form>
-    <v-navigation-drawer elevation="0" v-model="drawer">
+    <v-navigation-drawer elevation="0" v-model="drawer" location="right">
       <v-row class="d-flex flex-column mt-5 ml-auto mr-auto">
         <v-col class="parent_header_link">
           <a href="" class="header_link"> About </a>
@@ -39,17 +39,16 @@
     </v-navigation-drawer>
     <NuxtPage />
     <v-footer class="bg-light-blue-lighten-5 flex-column">
-      <v-row
-        class="mb-4"
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <v-col>
+      <v-row class="mb-4 footer-content" align-content="space-between">
+        <v-col cols="8">
           <a href="" class="footer_home_page_link">
             <h1>Fullstomic</h1>
           </a></v-col
         >
-        <v-col>
-          <v-row class="d-flex flex-column mt-5 ml-auto mr-auto">
+        <v-col cols="4">
+          <v-row
+            class="d-flex justify-center items-center flex-column mt-5 ml-auto mr-auto"
+          >
             <v-col class="parent_header_link">
               <a href="" class="header_link"> About </a>
             </v-col>
@@ -116,5 +115,12 @@ const drawer = ref(false)
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 </style>

@@ -3,6 +3,7 @@
     hide-details
     elevation="3"
     style="width: 80%; height: 200px; margin: auto"
+    v-ripple
   >
     <a :href="props.link" class="content">
       <v-row style="height: 110%">
@@ -38,6 +39,13 @@ const props = defineProps<{
   transition: all 0.2s;
 }
 .content:hover {
+  color: #fff;
+  & .image::before {
+    right: -100%;
+    z-index: -1;
+  }
+}
+.content:focus-visible {
   color: #fff;
   & .image::before {
     right: -100%;
