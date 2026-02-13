@@ -16,7 +16,7 @@
         </v-row>
       </v-card-title>
       <v-card-text>
-        <v-text-field v-model="query" variant="outlined">
+        <v-text-field v-model="query" variant="outlined" hide-details>
           <template #append-inner>
             <v-btn icon="mdi-magnify" variant="plain" @click.stop="onSearch">
             </v-btn>
