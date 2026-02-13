@@ -1,11 +1,12 @@
 <template>
   <v-card
+    :to="props.link"
     hide-details
-    elevation="3"
     style="width: 80%; height: 200px; margin: auto"
     v-ripple
+    class="content_link"
   >
-    <a :href="props.link" class="content">
+    <div class="content">
       <v-row style="height: 110%">
         <v-col class="image">
           <v-icon> mdi-{{ icon }}-outline </v-icon>
@@ -18,7 +19,7 @@
           <p>{{ props.contentDescription }}</p>
         </v-col>
       </v-row>
-    </a>
+    </div>
   </v-card>
 </template>
 <script setup lang="ts">
@@ -33,7 +34,7 @@ const props = defineProps<{
 .content {
   text-decoration: none;
   margin: auto;
-  width: 80%;
+  height: 100%;
   color: inherit;
   position: relative;
   transition: all 0.2s;
@@ -51,6 +52,9 @@ const props = defineProps<{
     right: -100%;
     z-index: -1;
   }
+}
+.content_link:focus-visible {
+  outline: 3px solid #42a5f5;
 }
 .image {
   position: relative;
