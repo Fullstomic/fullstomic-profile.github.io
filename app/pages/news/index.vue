@@ -14,9 +14,7 @@
       @click:clear="onSearchArticle"
       clearable
     >
-      <template #append-inner>
-        <v-btn icon="mdi-magnify" variant="text"> </v-btn> </template
-    ></v-text-field>
+    </v-text-field>
 
     <v-chip-group
       v-model="selectedCategory"
@@ -153,7 +151,7 @@ const filteredNews = ref<
     title: string
     content: string
   }[]
->([])
+>(newsItems.value)
 
 const getCategoryColor = (category: string) => {
   const colors: Record<string, string> = {
@@ -203,7 +201,10 @@ function onSearchArticle() {
 
 <style scoped>
 /* リストアイテムのホバー効果を少し強調 */
+.v-list-item {
+  transition: all 0.2s;
+}
 .v-list-item:hover {
-  background-color: rgba(var(--v-theme-primary), 0.05);
+  background-color: #96d7ff21;
 }
 </style>
