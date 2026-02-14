@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar elevation="0" sticky>
       <template #prepend>
-        <v-btn to="/" class="home_page_link">Fullstomic</v-btn>
+        <a href="/" class="home_page_link">Fullstomic</a>
       </template>
       <template #append>
         <v-btn
@@ -24,42 +24,88 @@
     <v-navigation-drawer elevation="0" v-model="drawer" location="right">
       <v-row class="d-flex flex-column mt-5 ml-auto mr-auto">
         <v-col class="parent_header_link">
-          <a href="" class="header_link"> About </a>
+          <v-btn
+            to="/about/"
+            color="primary"
+            class="header_link"
+            variant="plain"
+          >
+            About
+          </v-btn>
         </v-col>
         <v-col class="parent_header_link">
-          <a href="" class="header_link">News</a>
+          <v-btn to="/news/" color="primary" class="header_link" variant="plain"
+            >News</v-btn
+          >
         </v-col>
         <v-col class="parent_header_link">
-          <a href="" class="header_link">Portfolio</a>
+          <v-btn
+            href="portfolio"
+            color="primary"
+            class="header_link"
+            variant="plain"
+            >Portfolio</v-btn
+          >
         </v-col>
         <v-col class="parent_header_link">
-          <a href="" class="header_link">Contact</a>
+          <v-btn
+            to="contact"
+            color="primary"
+            class="header_link"
+            variant="plain"
+            >Contact</v-btn
+          >
         </v-col>
       </v-row>
     </v-navigation-drawer>
     <NuxtPage />
     <v-footer class="bg-light-blue-lighten-5 flex-column">
       <v-row class="mb-4 footer-content" align-content="space-between">
-        <v-col cols="8">
+        <v-col cols="6">
           <a href="" class="footer_home_page_link">
             <h1>Fullstomic</h1>
           </a></v-col
         >
-        <v-col cols="4">
+        <v-col cols="6">
           <v-row
             class="d-flex justify-center items-center flex-column mt-5 ml-auto mr-auto"
           >
             <v-col class="parent_header_link">
-              <a href="" class="header_link"> About </a>
+              <v-btn
+                to="/about/"
+                color="primary"
+                class="header_link"
+                variant="plain"
+              >
+                About
+              </v-btn>
             </v-col>
             <v-col class="parent_header_link">
-              <a href="" class="header_link">News</a>
+              <v-btn
+                to="/news/"
+                color="primary"
+                class="header_link"
+                variant="plain"
+                >News</v-btn
+              >
             </v-col>
             <v-col class="parent_header_link">
-              <a href="" class="header_link">Portfolio</a>
+              <v-btn
+                to="/portfolio/"
+                color="primary"
+                class="header_link"
+                variant="plain"
+                >Portfolio</v-btn
+              >
             </v-col>
             <v-col class="parent_header_link">
-              <a href="" class="header_link">Contact</a>
+              <v-btn
+                to="/contact/"
+                color="primary"
+                class="header_link"
+                variant="plain"
+                >Contact</v-btn
+              >
             </v-col>
           </v-row>
         </v-col>
@@ -89,10 +135,6 @@ const drawer = ref(false)
   font-weight: bold;
 }
 .header_link {
-  color: #98c4ff;
-  text-decoration: none;
-  position: relative;
-  transition: all 0.2s;
   &::before {
     content: '';
     position: absolute;
@@ -106,7 +148,6 @@ const drawer = ref(false)
   }
 }
 .header_link:hover {
-  color: #01579b;
   &::before {
     width: 100%;
   }
