@@ -24,12 +24,17 @@
     <v-navigation-drawer elevation="0" v-model="drawer" location="right">
       <v-row class="d-flex flex-column mt-5 ml-auto mr-auto">
         <v-col class="parent_header_link">
-          <v-btn to="about" color="primary" class="header_link" variant="plain">
+          <v-btn
+            to="/about/"
+            color="primary"
+            class="header_link"
+            variant="plain"
+          >
             About
           </v-btn>
         </v-col>
         <v-col class="parent_header_link">
-          <v-btn to="news" color="primary" class="header_link" variant="plain"
+          <v-btn to="/news/" color="primary" class="header_link" variant="plain"
             >News</v-btn
           >
         </v-col>
@@ -77,7 +82,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="news"
+                to="/news/"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -86,7 +91,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="portfolio"
+                to="/portfolio/"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -95,7 +100,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="contact"
+                to="/contact/"
                 color="primary"
                 class="header_link"
                 variant="plain"
