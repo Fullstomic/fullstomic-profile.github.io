@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar elevation="0" sticky>
       <template #prepend>
-        <a href="" class="home_page_link">Fullstomic </a>
+        <v-btn to="/" class="home_page_link">Fullstomic</v-btn>
       </template>
       <template #append>
         <v-btn
