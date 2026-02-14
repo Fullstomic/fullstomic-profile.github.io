@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="props.isShow">
+  <v-dialog v-model="props.isShow" max-width="500">
     <v-card>
       <v-card-title>
         <v-contanier>
@@ -36,12 +36,9 @@
             </v-chip>
           </div>
 
-          <h1
-            class="text-h4 text-md-h3 font-weight-bold mb-8"
-            style="line-height: 1.4"
-          >
+          <h2 class="font-weight-bold mb-8">
             {{ props.articleTitle }}
-          </h1>
+          </h2>
 
           <section class="article-body">
             <p class="text-body-1 mb-6">
