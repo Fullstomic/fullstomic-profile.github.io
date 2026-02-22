@@ -34,7 +34,12 @@
           </v-btn>
         </v-col>
         <v-col class="parent_header_link">
-          <v-btn to="/news/" color="primary" class="header_link" variant="plain"
+          <v-btn
+            color="primary"
+            class="header_link"
+            variant="plain"
+            @click.stop="drawer = false"
+            to="news"
             >News</v-btn
           >
         </v-col>
@@ -72,7 +77,7 @@
           >
             <v-col class="parent_header_link">
               <v-btn
-                to="/about/"
+                to="about"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -82,7 +87,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="/news/"
+                to="news"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -91,7 +96,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="/portfolio/"
+                to="portfolio"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -100,7 +105,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="/contact/"
+                to="contact"
                 color="primary"
                 class="header_link"
                 variant="plain"
