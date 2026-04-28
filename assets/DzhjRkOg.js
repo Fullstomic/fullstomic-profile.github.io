@@ -1,0 +1,1 @@
+import{g as a,o,c as s,a as n,t as c}from"./Db1mE0MI.js";import{_ as r}from"./DlAUqK2U.js";const i={class:"pageTitle"},p=a({__name:"PageTitle",props:{titleName:{},contentParagraph:{}},setup(e){const t=e;return(_,l)=>(o(),s("section",i,[n("h1",null,c(t.titleName),1)]))}}),d=Object.assign(r(p,[["__scopeId","data-v-b7b3fcd9"]]),{__name:"PageContentPageTitle"});export{d as P};
