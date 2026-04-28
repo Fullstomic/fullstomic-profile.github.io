@@ -2,6 +2,11 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
+  target: 'static',
+  app: {
+    baseURL: 'fullstomic-profile.github.io',
+    buildAssetsDir: 'assets',
+  },
   build: {
     transpile: ['vuetify'],
   },
