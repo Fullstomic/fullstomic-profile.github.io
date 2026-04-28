@@ -44,7 +44,7 @@
       <v-btn
         color="primary"
         class="link"
-        to="/portfolio/"
+        to="/portfolio"
         append-icon="mdi-arrow-right"
         >Portfolio</v-btn
       >

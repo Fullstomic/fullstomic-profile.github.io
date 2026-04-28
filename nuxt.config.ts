@@ -4,7 +4,7 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   target: 'static',
   app: {
-    baseURL: 'fullstomic-profile.github.io',
+    baseURL: '/',
     buildAssetsDir: 'assets',
   },
   build: {
@@ -19,6 +19,16 @@ export default defineNuxtConfig({
       template: {
         transformAssetUrls,
       },
+    },
+  },
+  nitro: {
+    prerender: {
+      exclude: [
+        '/contact/portfolio',
+        '/contact/contact',
+        '/contact/news',
+        '/contact/about',
+      ],
     },
   },
 })

@@ -44,7 +44,6 @@
           :title="item.title"
           :description="item.description"
           :img-url="item.imgUrl"
-          :link="item.link"
         />
       </v-col>
       <v-col
@@ -70,21 +69,18 @@ const portfolioItems = ref([
     description: 'ポートフォリオの説明1',
     category: 'Vue',
     imgUrl: 'https://cdn.vuetifyjs.com/images/parallax/material.jpg',
-    link: 'https://example.com/portfolio1',
   },
   {
     title: 'ポートフォリオタイトル2',
     description: 'ポートフォリオの説明2',
     category: 'React',
     imgUrl: 'https://cdn.vuetifyjs.com/images/parallax/material.jpg',
-    link: 'https://example.com/portfolio2',
   },
   {
     title: 'ポートフォリオタイトル3',
     description: 'ポートフォリオの説明3',
     category: 'Vue',
     imgUrl: 'https://cdn.vuetifyjs.com/images/parallax/material.jpg',
-    link: 'https://example.com/portfolio3',
   },
 ])
 const categories = [
@@ -102,7 +98,6 @@ const filteredNews = ref<
     description: string
     category: string
     imgUrl: string
-    link?: string
   }[]
 >(portfolioItems.value)
 

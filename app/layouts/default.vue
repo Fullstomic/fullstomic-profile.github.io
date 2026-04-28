@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar elevation="0" sticky>
       <template #prepend>
-        <a href="/" class="home_page_link">Fullstomic</a>
+        <nuxt-link to="/" class="home_page_link">Fullstomic</nuxt-link>
       </template>
       <template #append>
         <v-btn
@@ -25,7 +25,7 @@
       <v-row class="d-flex flex-column mt-5 ml-auto mr-auto">
         <v-col class="parent_header_link">
           <v-btn
-            to="/about/"
+            to="/about"
             color="primary"
             class="header_link"
             variant="plain"
@@ -39,13 +39,13 @@
             class="header_link"
             variant="plain"
             @click.stop="drawer = false"
-            to="news"
+            to="/news"
             >News</v-btn
           >
         </v-col>
         <v-col class="parent_header_link">
           <v-btn
-            href="portfolio"
+            to="/portfolio"
             color="primary"
             class="header_link"
             variant="plain"
@@ -54,7 +54,7 @@
         </v-col>
         <v-col class="parent_header_link">
           <v-btn
-            to="contact"
+            to="/contact"
             color="primary"
             class="header_link"
             variant="plain"
@@ -67,7 +67,7 @@
     <v-footer class="bg-light-blue-lighten-5 flex-column">
       <v-row class="mb-4 footer-content" align-content="space-between">
         <v-col cols="6">
-          <a href="" class="footer_home_page_link">
+          <a href="/" class="footer_home_page_link">
             <h1>Fullstomic</h1>
           </a></v-col
         >
@@ -77,7 +77,7 @@
           >
             <v-col class="parent_header_link">
               <v-btn
-                to="about"
+                to="/about"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -87,7 +87,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="news"
+                to="/news"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -96,7 +96,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="portfolio"
+                to="/portfolio"
                 color="primary"
                 class="header_link"
                 variant="plain"
@@ -105,7 +105,7 @@
             </v-col>
             <v-col class="parent_header_link">
               <v-btn
-                to="contact"
+                to="/contact"
                 color="primary"
                 class="header_link"
                 variant="plain"
